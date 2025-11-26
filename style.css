@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 25px 40px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  color: #1f2933;
+  font-size: 32px;
+}
+
+header p {
+  margin-top: 5px;
+  color: #6b7280;
+}
+
+.input-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.3);
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button.danger {
+  background: #ef4444;
+  margin-top: 10px;
+}
+
+button.danger:hover {
+  background: #dc2626;
+}
+
+.summary {
+  margin-bottom: 20px;
+  background: #eff6ff;
+  padding: 12px 15px;
+  border-radius: 8px;
+}
+
+.summary h2 {
+  margin: 0 0 5px;
+  color: #1d4ed8;
+}
+
+.summary p {
+  margin: 0;
+  font-size: 16px;
+  color: #111827;
+}
+
+.table-section h2 {
+  margin-bottom: 10px;
+  color: #1f2933;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f9fafb;
+}
+
+th,
+td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+th {
+  color: #4b5563;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.action-btn {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #f59e0b;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background: #d97706;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+}
