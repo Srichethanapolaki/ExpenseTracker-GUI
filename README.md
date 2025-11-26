@@ -16,16 +16,7 @@
 
 **Expense Tracker GUI** is a modern and user-friendly Java Swing application  
 that helps users store and analyze their daily expenses.  
-The UI is simple, clean, and perfect for students and beginners.
 
-Ideal for:
-
-✔ Java mini project  
-✔ GitHub portfolio  
-✔ Internship/placement showcase  
-✔ Subject practicals  
-
----
 
 # 🚀 Features  
 
@@ -44,29 +35,7 @@ Ideal for:
 
 ---
 
-# 🎨 Screenshots  
-
-(Add your screenshots in the `screenshots/` folder)
-
-<p align="center">
-  <img src="screenshots/home.png" width="500">
-</p>
-
-<p align="center">
-  <img src="screenshots/report.png" width="500">
-</p>
-
----
-
-# 🧠 UML Diagram  
-
-(Add your UML diagram in `/uml/` folder)
-
-<p align="center">
-  <img src="uml/class_diagram.png" width="450">
-</p>
-
----
+  
 
 # 💻 Tech Stack  
 
