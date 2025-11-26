@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Expense Tracker Web App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="app-container">
-    <header>
-      <h1>Expense Tracker</h1>
-      <p>Track your daily expenses by category</p>
-    </header>
 
-    <section class="input-section">
+  <div class="container">
+
+    <h1 class="app-title">💰 Expense Tracker</h1>
+
+    <div class="card input-card">
+      <h2>Add New Expense</h2>
+
       <div class="field">
         <label>Description</label>
-        <input id="desc" type="text" placeholder="e.g. Tea, Taxi, Books" />
+        <input id="desc" type="text" placeholder="Tea, Bus, Books..." />
       </div>
 
       <div class="field">
         <label>Amount (₹)</label>
-        <input id="amount" type="number" min="1" placeholder="e.g. 100" />
+        <input id="amount" type="number" />
       </div>
 
       <div class="field">
@@ -35,31 +36,32 @@
         </select>
       </div>
 
-      <button id="addBtn">Add Expense</button>
-    </section>
+      <button id="addBtn" class="btn primary">➕ Add Expense</button>
+    </div>
 
-    <section class="summary">
-      <h2>Summary</h2>
-      <p>Total Expenses: ₹<span id="total">0</span></p>
-    </section>
+    <div class="card summary-card">
+      <h2>Total Expenses</h2>
+      <p class="total-amount">₹ <span id="total">0</span></p>
+    </div>
 
-    <section class="table-section">
+    <div class="card table-card">
       <h2>All Expenses</h2>
+
       <table>
         <thead>
           <tr>
             <th>Description</th>
-            <th>Amount (₹)</th>
+            <th>₹ Amount</th>
             <th>Category</th>
             <th>Action</th>
           </tr>
         </thead>
-        <tbody id="expenseTableBody">
-          <!-- rows added by JS -->
-        </tbody>
+        <tbody id="expenseTableBody"></tbody>
       </table>
-      <button id="clearBtn" class="danger">Clear All</button>
-    </section>
+
+      <button id="clearBtn" class="btn danger">🗑 Clear All</button>
+    </div>
+
   </div>
 
   <script src="script.js"></script>
