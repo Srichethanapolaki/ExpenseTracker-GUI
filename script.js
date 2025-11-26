@@ -8,77 +8,79 @@ const totalSpan = document.getElementById("total");
 
 let expenses = [];
 
-// Load from localStorage if present
 window.onload = function () {
   const saved = localStorage.getItem("expenses");
   if (saved) {
     expenses = JSON.parse(saved);
-    renderTable();
-    updateTotal();
+    refresh();
   }
 };
 
-addBtn.addEventListener("click", () => {
+addBtn.onclick = function () {
   const desc = descInput.value.trim();
   const amount = parseFloat(amountInput.value);
-  const category = categorySelect.value;
 
-  if (!desc || isNaN(amount) || amount <= 0) {
-    alert("Please enter a valid description and amount.");
+  if (!desc || !amount || amount <= 0) {
+    alert("Enter valid details");
     return;
   }
 
-  const expense = {
+  const category = categorySelect.value;
+
+  const exp = {
     id: Date.now(),
     desc,
     amount,
-    category,
+    category
   };
 
-  expenses.push(expense);
-  saveAndRefresh();
+  expenses.push(exp);
+  saveData();
+  refresh();
 
-  // clear inputs
   descInput.value = "";
   amountInput.value = "";
-  categorySelect.value = "Food";
-});
+};
 
-clearBtn.addEventListener("click", () => {
-  if (confirm("Clear all expenses?")) {
+clearBtn.onclick = function () {
+  if (confirm("Clear all?")) {
     expenses = [];
-    saveAndRefresh();
+    saveData();
+    refresh();
   }
-});
+};
 
-function saveAndRefresh() {
-  localStorage.setItem("expenses", JSON.stringify(expenses));
-  renderTable();
-  updateTotal();
+function deleteExpense(id) {
+  expenses = expenses.filter(e => e.id !== id);
+  saveData();
+  refresh();
 }
 
-function renderTable() {
+function refresh() {
   tableBody.innerHTML = "";
-  expenses.forEach((exp) => {
-    const tr = document.createElement("tr");
 
-    tr.innerHTML = `
+  expenses.forEach(exp => {
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
       <td>${exp.desc}</td>
       <td>₹${exp.amount}</td>
       <td>${exp.category}</td>
-      <td><button class="action-btn" onclick="deleteExpense(${exp.id})">Delete</button></td>
+      <td><button class="delete-btn" onclick="deleteExpense(${exp.id})">Delete</button></td>
     `;
 
-    tableBody.appendChild(tr);
+    tableBody.appendChild(row);
   });
+
+  updateTotal();
 }
 
 function updateTotal() {
-  const total = expenses.reduce((sum, exp) => sum + exp.amount, 0);
+  const total = expenses.reduce((sum, e) => sum + e.amount, 0);
   totalSpan.textContent = total.toFixed(2);
 }
 
-function deleteExpense(id) {
-  expenses = expenses.filter((e) => e.id !== id);
-  saveAndRefresh();
+function saveData() {
+  localStorage.setItem("expenses", JSON.stringify(expenses));
 }
+
