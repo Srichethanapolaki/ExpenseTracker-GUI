@@ -1,89 +1,138 @@
-# 📊 Personal Expense Tracker — Java Swing GUI
+# 🌟 Expense Tracker — Java Swing GUI  
 
-A simple and elegant GUI application to track daily expenses with category-based reporting.  
-Built using **Core Java + Swing**, ideal for students, beginners, and resume projects.
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17+-red?style=for-the-badge&logo=java" />
+  <img src="https://img.shields.io/badge/Swing-GUI-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Project-Expense%20Tracker-green?style=for-the-badge" />
+</p>
 
----
-
-## 🚀 Features
-
-- Add expense with category (Food, Travel, Shopping, Bills, Others)
-- Record amount easily
-- Automatic total expense calculation
-- Category-wise spending breakdown
-- Clean and user-friendly interface
-- Uses ArrayList (no database needed)
-- 100% Java-based and portable
+<p align="center">
+  <img src="https://dummyimage.com/900x250/0f172a/ffffff&text=Expense+Tracker+GUI+Application" />
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+# 📝 Overview  
 
-- **Java (JDK 17 or above)**
-- **Java Swing**
-- **OOP Concepts**
-- **ArrayList**
+**Expense Tracker GUI** is a modern and user-friendly Java Swing application  
+that helps users store and analyze their daily expenses.  
+The UI is simple, clean, and perfect for students and beginners.
+
+Ideal for:
+
+✔ Java mini project  
+✔ GitHub portfolio  
+✔ Internship/placement showcase  
+✔ Subject practicals  
 
 ---
 
-## 📁 Project Structure
+# 🚀 Features  
+
+<div align="center">
+
+| 🌟 Feature | ⭐ Description |
+|-----------|----------------|
+| ➕ Add Expense | Add amount & category easily |
+| 📊 View Report | Auto-calculates total spending |
+| 🧩 Categories | Food, Travel, Shopping, Bills, Others |
+| 🎨 GUI | Clean Swing-based interface |
+| ⚙ Offline | No database required |
+| 🧮 Analytics | Shows spending summary |
+
+</div>
+
+---
+
+# 🎨 Screenshots  
+
+(Add your screenshots in the `screenshots/` folder)
+
+<p align="center">
+  <img src="screenshots/home.png" width="500">
+</p>
+
+<p align="center">
+  <img src="screenshots/report.png" width="500">
+</p>
+
+---
+
+# 🧠 UML Diagram  
+
+(Add your UML diagram in `/uml/` folder)
+
+<p align="center">
+  <img src="uml/class_diagram.png" width="450">
+</p>
+
+---
+
+# 💻 Tech Stack  
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-Swing-orange?style=for-the-badge&logo=java" />
+  <img src="https://img.shields.io/badge/OOP-Concepts-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/ArrayList-Data%20Structure-green?style=for-the-badge" />
+</p>
+
+---
+
+# 🏗 Project Structure  
 
 ```
 ExpenseTracker-GUI/
  ├── src/
  │    └── ExpenseTracker.java
  ├── screenshots/
+ ├── uml/
  └── README.md
 ```
 
 ---
 
-## 🔧 How to Run
+# 🛠 How to Run  
 
-### Compile:
+### ✔ Compile:
 ```
 javac src/ExpenseTracker.java
 ```
 
-### Run:
+### ✔ Run:
 ```
 java src.ExpenseTracker
 ```
 
 ---
 
-## 📐 UML Diagram
+# 📚 Concepts Used  
 
-```
-Expense
- ├─ category : String
- └─ amount : double
-
-ExpenseTracker
- ├─ expenses : ArrayList<Expense>
- ├─ addExpense()
- ├─ showReport()
- └─ GUI Components
-```
+- OOP (Classes, Objects)  
+- ArrayList  
+- Java Swing  
+- Event Handling  
+- GUI Layout Design  
 
 ---
 
-## 🎓 Viva Questions
+# 🎯 Future Enhancements  
 
-**Q1: What concepts did you use?**  
-OOP, ArrayList, Swing GUI, Event Handling.
-
-**Q2: Why Swing?**  
-It's lightweight, easy to implement, and works everywhere.
-
-**Q3: Future improvements?**  
-Add graphs, file storage, monthly summaries, login system.
+- Add pie charts / graphs  
+- Save expenses to file  
+- Export report as PDF  
+- Add login system  
+- Monthly spending calendar  
 
 ---
 
-## 📝 Resume Description
+# 📝 Author  
 
-**Personal Expense Tracker (Java GUI):**  
-Designed a GUI-based expense management tool using Java Swing.  
-Users can add expenses, categorize them, and generate a spending report.  
-Implemented using OOP, event-driven programming, and ArrayList structures.
+**Chethana**  
+Student Developer 💻  
+Passionate about Java & GUI Projects  
+
+---
+
+# ⭐ If you like this project, please give it a star ⭐  
+
+<p align="center">⭐⭐⭐⭐⭐</p>
