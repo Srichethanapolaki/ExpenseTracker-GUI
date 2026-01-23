@@ -96,7 +96,7 @@ java src.ExpenseTracker
 
 # 📝 Author  
 
-**Polaki SriChethana**  
+**Polaki Srichethana**  
 Student Developer 💻  
 Passionate about Java & GUI Projects  
 
