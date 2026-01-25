@@ -1,107 +1,97 @@
-# 🌟 Expense Tracker — Java Swing GUI  
+# 🌟 Expense Tracker GUI
+
+A simple and modern **Expense Tracker application** built using **HTML, CSS, and JavaScript** to help users track and manage daily expenses easily.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-17+-red?style=for-the-badge&logo=java" />
-  <img src="https://img.shields.io/badge/Swing-GUI-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Project-Expense%20Tracker-green?style=for-the-badge" />
-</p>
-
-<p align="center">
-  <img src="https://dummyimage.com/900x250/0f172a/ffffff&text=Expense+Tracker+GUI+Application" />
+  <img src="expense-tracker-ui.png" alt="Expense Tracker UI" width="900">
 </p>
 
 ---
 
-# 📝 Overview  
+## 📝 Overview
 
-**Expense Tracker GUI** is a modern and user-friendly Java Swing application  
-that helps users store and analyze their daily expenses.  
+The **Expense Tracker** is a web-based application that allows users to:
 
+- Add daily expenses  
+- Categorize spending  
+- View total expenses  
+- Delete all records  
+- Store data in browser using LocalStorage  
 
-# 🚀 Features  
-
-<div align="center">
-
-| 🌟 Feature | ⭐ Description |
-|-----------|----------------|
-| ➕ Add Expense | Add amount & category easily |
-| 📊 View Report | Auto-calculates total spending |
-| 🧩 Categories | Food, Travel, Shopping, Bills, Others |
-| 🎨 GUI | Clean Swing-based interface |
-| ⚙ Offline | No database required |
-| 🧮 Analytics | Shows spending summary |
-
-</div>
+It is designed with a clean, responsive, and user-friendly interface.
 
 ---
 
-  
+## 🚀 Features
 
-# 💻 Tech Stack  
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-Swing-orange?style=for-the-badge&logo=java" />
-  <img src="https://img.shields.io/badge/OOP-Concepts-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/ArrayList-Data%20Structure-green?style=for-the-badge" />
-</p>
+- ➕ Add new expenses with description, amount, and category  
+- 📊 Automatically calculates total expenses  
+- 🧩 Categories: Food, Travel, Shopping, Bills, Others  
+- 🗑 Clear all expenses with one click  
+- 💾 Data stored in browser (LocalStorage)  
+- 🎨 Clean and modern UI design  
 
 ---
 
-# 🏗 Project Structure  
+## 💻 Tech Stack
 
-```
+- HTML  
+- CSS  
+- JavaScript  
+
+---
+
+## 🏗 Project Structure
+
 ExpenseTracker-GUI/
- ├── src/
- │    └── ExpenseTracker.java
- ├── screenshots/
- ├── uml/
- └── README.md
-```
+├── index.html
+├── style.css
+├── script.js
+├── ExpenseTracker.java
+├── expense-tracker-ui.png
+└── README.md
+
 
 ---
 
-# 🛠 How to Run  
+## 🛠 How to Run
 
-### ✔ Compile:
-```
-javac src/ExpenseTracker.java
-```
+### ✅ Method 1: Open in Browser
+Just double-click:
 
-### ✔ Run:
-```
-java src.ExpenseTracker
-```
+index.html
 
----
 
-# 📚 Concepts Used  
+### ✅ Method 2: Live Demo
 
-- OOP (Classes, Objects)  
-- ArrayList  
-- Java Swing  
-- Event Handling  
-- GUI Layout Design  
+🔗 https://srichethanapolaki.github.io/ExpenseTracker-GUI/
 
 ---
 
-# 🎯 Future Enhancements  
+## 📚 Concepts Used
 
-- Add pie charts / graphs  
-- Save expenses to file  
+- DOM Manipulation  
+- JavaScript Events  
+- LocalStorage  
+- Responsive UI Design  
+
+---
+
+## 🎯 Future Enhancements
+
+- Add charts and graphs  
 - Export report as PDF  
 - Add login system  
-- Monthly spending calendar  
+- Monthly expense summary  
 
 ---
 
-# 📝 Author  
+## 📝 Author
 
 **Polaki Srichethana**  
-Student Developer 💻  
-Passionate about Java & GUI Projects  
+Student Developer  
+Interested in Web Development and UI Design
 
 ---
 
-# ⭐ If you like this project, please give it a star ⭐  
-
-<p align="center">⭐⭐⭐⭐⭐</p>
+## ⭐ If you like this project, give it a star ⭐
